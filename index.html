@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Canvas | Art & Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <h2>🎨 Creative Canvas</h2>
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h4>WELCOME TO CREATIVE CANVAS</h4>
+        <h1>Art That Speaks.<br>Craft That Inspires.</h1>
+        <p>
+            Discover beautiful handmade crafts, unique artwork
+            and creative gifts made with love.
+        </p>
+        <a href="#products" class="btn">Explore Products</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div>
+        <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=700"
+             alt="Art and craft workspace">
+    </div>
+    <div class="about-text">
+        <h4>ABOUT US</h4>
+        <h2>Creativity Has No Limits!</h2>
+        <p>
+            Creative Canvas is an art and craft company that
+            transforms imagination into beautiful handmade creations.
+            Our goal is to spread happiness through creativity,
+            handmade products and artistic designs.
+        </p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+    <h4>OUR COLLECTION</h4>
+    <h2>Our Beautiful Products</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500"
+                 alt="Painting">
+            <h3>Handmade Paintings</h3>
+            <p>Beautiful artistic wall paintings.</p>
+            <h3>₹499</h3>
+            <button onclick="addToCart('Handmade Paintings',499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?w=500"
+                 alt="Creative decor">
+            <h3>Home Decor</h3>
+            <p>Creative decorations for your home.</p>
+            <h3>₹699</h3>
+            <button onclick="addToCart('Home Decor',699)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500"
+                 alt="Handmade gifts">
+            <h3>Handmade Gifts</h3>
+            <p>Special gifts for special moments.</p>
+            <h3>₹399</h3>
+            <button onclick="addToCart('Handmade Gifts',399)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+                 alt="Art stationery">
+            <h3>Art & Stationery</h3>
+            <p>Creative supplies for artists.</p>
+            <h3>₹299</h3>
+            <button onclick="addToCart('Art & Stationery',299)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div class="cart">
+        <h3>🛒 Your Shopping Cart</h3>
+        <p id="cartCount">Items: 0</p>
+        <p id="cartTotal">Total: ₹0</p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h4>WHAT WE OFFER</h4>
+    <h2>Our Creative Services</h2>
+
+    <div class="service-grid">
+        <div class="service">
+            <span>🎨</span>
+            <h3>Custom Painting</h3>
+            <p>Personalized paintings designed for you.</p>
+        </div>
+
+        <div class="service">
+            <span>🎁</span>
+            <h3>Gift Decoration</h3>
+            <p>Beautiful handmade gifts for every occasion.</p>
+        </div>
+
+        <div class="service">
+            <span>✂️</span>
+            <h3>Craft Workshops</h3>
+            <p>Learn creative and artistic skills.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h4>CONTACT US</h4>
+    <h2>Let's Create Something Amazing!</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="response"></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>🎨 Creative Canvas</h2>
+    <p>Art | Creativity | Handmade With Love</p>
+    <p>© 2026 Creative Canvas. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
